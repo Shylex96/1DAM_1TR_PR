@@ -1,4 +1,4 @@
-package es.studium.ejercicio8;
+package es.studium.ejercicio8; // Calcular potencias.
 import java.util.Scanner;
 
 public class Ejercicio8
