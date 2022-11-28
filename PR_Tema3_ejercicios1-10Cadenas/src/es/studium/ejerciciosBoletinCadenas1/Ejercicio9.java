@@ -7,20 +7,24 @@ public class Ejercicio9
 	public static void main(String[] args)
 	{
 		String cadena;
-		int longitud;
-		int posicion;
+		int longitud, posicion;
 		
 		Scanner in = new Scanner(System.in);
 		System.out.println("Introduzca una frase:");
 		cadena = in.nextLine();
-		System.out.println("Introduzca una posici�n:");
+		System.out.println("Introduzca una posición:");
 		posicion = in.nextInt();
 		System.out.println("Introduzca la longitud:");
 		longitud = in.nextInt();
 		in.close();
 		
-		cadena = subcadena(cadena, longitud, posicion);
-		System.out.println("La longitud de la frase con espacios es de: " +cadena);
+		if (cadena.length() < (posicion + longitud))
+		{
+			System.out.println("La longitud o la posición dada excede la frase.");
+		} else {
+			cadena = subcadena(cadena, longitud, posicion);
+			System.out.println("La longitud de la frase con espacios es de: " + cadena);
+		}
 		
 	}
 
