@@ -16,8 +16,14 @@ public class EjercicioX
 		longitud = in.nextInt();
 		in.close();
 		
-		cadena = subcadena(cadena, longitud);
-		System.out.println("La longitud de la frase con espacios es de: " +cadena);
+		if (cadena.length() < (longitud))
+		{
+			System.out.println("La longitud dada excede la frase.");
+		} else {
+			cadena = subcadena(cadena, longitud);
+			System.out.println("La longitud de la frase con espacios es de: " + cadena);
+		}
+
 	}
 	
 
